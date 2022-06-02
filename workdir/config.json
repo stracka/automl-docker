@@ -1,0 +1,16 @@
+{
+    "filenames" : ["etaPi_2016_2018_MC.root", "etaPi_SB_mu.root","etaPi_SB_md.root"],
+    "treenames" : ["DecayTree","DecayTree","DecayTree"], 
+    "labels"    : [1,0,0],
+    "norm"      : [1,1,1],
+    "selection" : "selection.json",
+    "limits"    : "lims.json",
+    "aux"       : "oddpi_ID",
+    "target"    : "y",
+    "weightvars": [],
+    "extra"     : ["runNumber","eventNumber","year","Polarity","nPV","D_PVFitEtaP_M","rho_M"],
+    "retrain"   : true,
+    "prefix"    : "etaPi_BDT_",
+    "n_trials"  : 4,
+    "timeout"   : 600
+}

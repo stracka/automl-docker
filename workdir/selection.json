@@ -1,0 +1,7 @@
+{
+    "D_MC_MOTHER_ID": [-Infinity,-500],
+    "D_MC_MOTHER_ID": [500,Infinity],
+    "gamma_CL": [-Infinity,0.8],
+    "gamma_PP_IsPhoton" : [-Infinity,0.6],
+    "pipipi_M": [1825,Infinity]
+}

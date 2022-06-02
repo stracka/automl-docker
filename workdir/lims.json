@@ -1,0 +1,15 @@
+{
+    "D_PVFitBeam_chi2" : [0,30] ,
+    "D_IPCHI2_OWNPV" : [0,15] ,
+    "D_ACosDira_OWNPV" : [0, 0.025] , 
+    "eta_IPCHI2_OWNPV" : [0,1000] ,
+    "maxPIDK" : [0,-1] , 
+    "maxPIDe" : [0,-1] ,
+    "maxPIDp" : [0,-1] ,
+    "maxGhostProb" : [0,-1] ,
+    "maxCHI2NDOF" : [0,-1] ,
+    "gamma_PT" : [900,5000] ,
+    "gamma_CL" : [0,-1] ,
+    "rho_M" : [0,-1] ,
+    "oddpi_ID" : [-500,500]
+}
