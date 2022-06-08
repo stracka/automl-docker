@@ -1,0 +1,5 @@
+build-essential 
+libcurl4-openssl-dev
+libssl-dev
+python3-pip
+swig
