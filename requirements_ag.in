@@ -1,0 +1,10 @@
+autogluon.tabular[lightgbm]==0.5.0
+hep_ml==0.7.1
+matplotlib
+optuna==2.10.1
+tables
+--find-links https://download.pytorch.org/whl/cpu/torch_stable.html 
+torch>=1.0,<1.12+cpu
+tpot==0.11.7
+uproot3
+uproot4
