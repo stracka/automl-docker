@@ -20,7 +20,7 @@ FROM deps AS reqs
 
 USER root
 
-COPY requirements_ag.in /opt/requirements_ag.in
+COPY requirements_askl.in /opt/requirements_askl.in
 
 WORKDIR /opt
 
@@ -29,8 +29,8 @@ SHELL ["/bin/bash", "-c"]
 RUN python3 -m venv agvenv \
     && source agvenv/bin/activate \
     && python3 -m pip install pip-tools \
-    && pip-compile requirements_ag.in \
-    && cat requirements_ag.txt \
+    && pip-compile requirements_askl.in \
+    && cat requirements_askl.txt \
     && deactivate 
 
 CMD ["bash"]

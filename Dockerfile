@@ -1,4 +1,4 @@
-FROM rootproject/root:6.22.02-ubuntu20.04
+FROM rootproject/root:6.22.02-ubuntu20.04 
 
 USER root
 
@@ -15,16 +15,23 @@ RUN apt-get update -qq && apt-get -y install --no-install-recommends -y $(cat /o
 
 ARG USER=foo
 RUN useradd -ms /bin/bash $USER 
+ENV PATH /usr/local/bin:/home/$USER/.local/bin:$PATH 
 
-COPY requirements.txt /opt/requirements.txt
+COPY requirements.txt /home/$USER/requirements.txt
 
 USER $USER
-ENV PATH /usr/local/bin:/home/$USER/.local/bin:$PATH 
 WORKDIR /home/$USER
 
 RUN python3 -m pip install --upgrade pip --user \
     && python3 -m pip install --upgrade setuptools wheel --user \
-    && python3 -m pip install -r /opt/requirements.txt --user \
-    && python3 -m pip cache purge 
+    && python3 -m pip install -r requirements.txt --user \
+    && python3 -m pip cache purge
 
 CMD ["bash"]
+
+
+
+
+
+
+
