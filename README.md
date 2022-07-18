@@ -35,7 +35,7 @@ docker and script to test some automl packages for binary classification
 
 `foo:~$ make`
 
-### After place the input .root file in build folder, copy model and run the program: 
+### After placing the input .root file in build folder, copy model and run the program: 
 
 `foo:~$ cp ../etaPi_BDT_clf.joblib . `
 
